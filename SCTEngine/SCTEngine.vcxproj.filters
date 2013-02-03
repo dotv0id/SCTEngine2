@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{3bda8615-5764-4321-988b-34d21cd5215a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{fb81dab8-0260-45d0-960f-980ed982518a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scene">
+      <UniqueIdentifier>{f723a819-bbcc-48d9-afbf-203e2ee88cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Audio">
+      <UniqueIdentifier>{e2ddb24a-471a-45b4-abfb-46b5b9e5a76a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scene">
+      <UniqueIdentifier>{5d6abd81-87de-49da-8a0e-000587797c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio">
+      <UniqueIdentifier>{2a418082-d328-42fc-82c1-4abe06bb700b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resource">
+      <UniqueIdentifier>{e646a13c-6580-4fa8-9574-7bfd8f98c64e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Render">
+      <UniqueIdentifier>{a057c5e7-6095-40f9-bd01-64937dd9c8f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render">
+      <UniqueIdentifier>{7a5540ad-8cf4-444b-a4b6-3498ffe84037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resource\Direct3D10">
+      <UniqueIdentifier>{b5e45b9f-71ea-449b-9f32-420a19f601fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Render\Direct3D10">
+      <UniqueIdentifier>{1b9266b2-bd27-44f3-9078-78b1f4589c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render\Direct3D10">
+      <UniqueIdentifier>{73f0fc66-f05c-4a64-bc56-24f819cb0659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{69aa7603-3283-4360-b582-87f2f58aee91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input\Win32">
+      <UniqueIdentifier>{2b1cafec-4935-4fe4-a5de-c9d047b91a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input\Win32">
+      <UniqueIdentifier>{72b40a81-a20b-4fcc-ba5e-35393f67b600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tools">
+      <UniqueIdentifier>{d0be19b8-079e-4a83-9aea-5aaf5e0875c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tools">
+      <UniqueIdentifier>{c987a7e4-0540-4d5b-8d0d-4a191ab80516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resource">
+      <UniqueIdentifier>{4f47408a-cf01-4cae-8f96-4ee898fe931a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resource\Direct3D10">
+      <UniqueIdentifier>{41168e9a-55db-4fd5-9f56-6a86f6d087ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PCG">
+      <UniqueIdentifier>{ab0b5c4e-8346-4408-8b01-c9e8cdd8bef8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PCG">
+      <UniqueIdentifier>{0f2193d3-c5ef-46d4-95ad-7a4f02614926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PCG\Terrain">
+      <UniqueIdentifier>{cb46c20d-a873-4a78-9781-4424e82914ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\PCG\Vegetation">
+      <UniqueIdentifier>{c6a022a6-cdbe-4cb8-ba85-30f27927565c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PCG\Terrain">
+      <UniqueIdentifier>{e1ff27a2-9157-4148-b9da-4f7e03506641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PCG\Vegetation">
+      <UniqueIdentifier>{3e4fcfb5-ffc6-4b0e-9084-f70f235dbab9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\SCTConfiguration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\SCTEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\SCTFont.h">
+      <Filter>Header Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\SCTMesh.h">
+      <Filter>Header Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\SCTShader.h">
+      <Filter>Header Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\SCTTexture.h">
+      <Filter>Header Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\SCTInputLayout.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\SCTRenderInterface.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTFontD3D10.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTMeshD3D10.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTTextureD3D10.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\Direct3D10\SCTInputLayoutD3D10.h">
+      <Filter>Header Files\Render\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\Direct3D10\SCTRenderInterfaceD3D10.h">
+      <Filter>Header Files\Render\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\SCTVertexDefs.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10Debug.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10Lighting.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10Wireframe.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\SCTTextManager.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\Direct3D10\SCTTextManagerD3D10.h">
+      <Filter>Header Files\Render\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10Font.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Input\SCTInputManager.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Input\SCTKeyboard.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Input\SCTMouse.h">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Input\Win32\SCTInputManagerWin32.h">
+      <Filter>Header Files\Input\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Input\Win32\SCTKeyboardWin32.h">
+      <Filter>Header Files\Input\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Input\Win32\SCTMouseWin32.h">
+      <Filter>Header Files\Input\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\SCTMaterial.h">
+      <Filter>Header Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\SCTResourceManager.h">
+      <Filter>Header Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTMaterialD3D10.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Scene\SCTCamera.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Scene\SCTLight.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Scene\SCTSceneManager.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Scene\SCTSceneNode.h">
+      <Filter>Header Files\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\SCTRenderTarget.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\SCTRenderTexture.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\SCTRenderWindow.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\Direct3D10\SCTRenderTextureD3D10.h">
+      <Filter>Header Files\Render\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\Direct3D10\SCTRenderWindowD3D10.h">
+      <Filter>Header Files\Render\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10PostEffect.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Render\SCTRenderDefines.h">
+      <Filter>Header Files\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\PCG\SCTPCG.h">
+      <Filter>Header Files\PCG</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\PCG\Terrain\SCTTerrain.h">
+      <Filter>Header Files\PCG\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\PCG\Vegetation\SCTVegetation.h">
+      <Filter>Header Files\PCG\Vegetation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\PCG\SCTPCGTypeDefs.h">
+      <Filter>Header Files\PCG</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10SkyBox.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\PCG\SCTPCGFunctions.h">
+      <Filter>Header Files\PCG</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\SCTSkyBox.h">
+      <Filter>Header Files\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Resource\Direct3D10\SCTSkyBoxD3D10.h">
+      <Filter>Header Files\Resource\Direct3D10</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\SCTConfiguration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SCTEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Direct3D10\SCTFontD3D10.cpp">
+      <Filter>Source Files\Resource\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Direct3D10\SCTMeshD3D10.cpp">
+      <Filter>Source Files\Resource\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10.cpp">
+      <Filter>Source Files\Resource\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Direct3D10\SCTTextureD3D10.cpp">
+      <Filter>Source Files\Resource\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\Direct3D10\SCTInputLayoutD3D10.cpp">
+      <Filter>Source Files\Render\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\Direct3D10\SCTRenderInterfaceD3D10.cpp">
+      <Filter>Source Files\Render\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10Debug.cpp">
+      <Filter>Source Files\Resource\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10Lighting.cpp">
+      <Filter>Source Files\Resource\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10Wireframe.cpp">
+      <Filter>Source Files\Resource\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10Font.cpp">
+      <Filter>Source Files\Resource\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\Direct3D10\SCTTextManagerD3D10.cpp">
+      <Filter>Source Files\Render\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Input\Win32\SCTInputManagerWin32.cpp">
+      <Filter>Source Files\Input\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Input\Win32\SCTKeyboardWin32.cpp">
+      <Filter>Source Files\Input\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Input\Win32\SCTMouseWin32.cpp">
+      <Filter>Source Files\Input\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\SCTResourceManager.cpp">
+      <Filter>Source Files\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\SCTCamera.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\SCTLight.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\SCTSceneManager.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\SCTSceneNode.cpp">
+      <Filter>Source Files\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\SCTMaterial.cpp">
+      <Filter>Source Files\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\Direct3D10\SCTRenderTextureD3D10.cpp">
+      <Filter>Source Files\Render\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\Direct3D10\SCTRenderWindowD3D10.cpp">
+      <Filter>Source Files\Render\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10PostEffect.cpp">
+      <Filter>Source Files\Resource\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PCG\Vegetation\SCTVegetation.cpp">
+      <Filter>Source Files\PCG\Vegetation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PCG\Terrain\SCTTerrain.cpp">
+      <Filter>Source Files\PCG\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10SkyBox.cpp">
+      <Filter>Source Files\Resource\Direct3D10</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PCG\SCTPCGFunctions.cpp">
+      <Filter>Source Files\PCG</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource\Direct3D10\SCTSkyBoxD3D10.cpp">
+      <Filter>Source Files\Resource\Direct3D10</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_DLL|Win32">
+      <Configuration>Debug_DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_lib|Win32">
+      <Configuration>Debug_lib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DLL|Win32">
+      <Configuration>Release_DLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_lib|Win32">
+      <Configuration>Release_lib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ED93896F-5996-45FD-84C3-ED0542165315}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SCTEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_lib|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_lib|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_lib|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_lib|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_lib|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectDir)Obj\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)Lib\Debug\</OutDir>
+    <IncludePath>$(DXSDK_DIR)include;../ThirdParty/vld/include;../ThirdParty/assimp_2.0.863/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)/lib/x86;../SCTCore/Lib/Debug;../SCTMath/Lib/Debug;../ThirdParty/vld/lib/Win32;../ThirdParty/assimp_2.0.863/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectDir)Obj\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)Lib\Debug\</OutDir>
+    <IncludePath>$(DXSDK_DIR)include;../ThirdParty/vld/include;../ThirdParty/assimp_2.0.863/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)/lib/x86;../SCTCore/Lib/Debug;../SCTMath/Lib/Debug;../ThirdParty/vld/lib/Win32;../ThirdParty/assimp_2.0.863/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)Lib\Release\</OutDir>
+    <IntDir>$(ProjectDir)Obj\$(Configuration)\</IntDir>
+    <IncludePath>$(DXSDK_DIR)include;../ThirdParty/vld/include;../ThirdParty/assimp_2.0.863/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)/lib/x86;../SCTCore/Lib/Debug;../SCTMath/Lib/Debug;../ThirdParty/vld/lib/Win32;../ThirdParty/assimp_2.0.863/lib;..\ThirdParty\DevIL_SDK_x86_1.7.8\lib\unicode;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_lib|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)include;../ThirdParty/vld/include;../ThirdParty/assimp_2.0.863/include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)/lib/x86;../SCTCore/Lib/Debug;../SCTMath/Lib/Debug;../ThirdParty/vld/lib/Win32;../ThirdParty/assimp_2.0.863/lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(ProjectDir)Lib\Release\</OutDir>
+    <IntDir>$(ProjectDir)Obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_lib|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Include;../SCTMath/Include;../SCTCore/Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DLL|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Include;../SCTMath/Include;../SCTCore/Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Include;../SCTMath/Include;../SCTCore/Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_lib|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./Include;../SCTMath/Include;../SCTCore/Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Input\SCTInputManager.h" />
+    <ClInclude Include="Include\Input\SCTKeyboard.h" />
+    <ClInclude Include="Include\Input\SCTMouse.h" />
+    <ClInclude Include="Include\Input\Win32\SCTInputManagerWin32.h" />
+    <ClInclude Include="Include\Input\Win32\SCTKeyboardWin32.h" />
+    <ClInclude Include="Include\Input\Win32\SCTMouseWin32.h" />
+    <ClInclude Include="Include\PCG\SCTPCG.h" />
+    <ClInclude Include="Include\PCG\SCTPCGFunctions.h" />
+    <ClInclude Include="Include\PCG\SCTPCGTypeDefs.h" />
+    <ClInclude Include="Include\PCG\Terrain\SCTTerrain.h" />
+    <ClInclude Include="Include\PCG\Vegetation\SCTVegetation.h" />
+    <ClInclude Include="Include\Render\Direct3D10\SCTInputLayoutD3D10.h" />
+    <ClInclude Include="Include\Render\Direct3D10\SCTRenderInterfaceD3D10.h" />
+    <ClInclude Include="Include\Render\Direct3D10\SCTRenderTextureD3D10.h" />
+    <ClInclude Include="Include\Render\Direct3D10\SCTRenderWindowD3D10.h" />
+    <ClInclude Include="Include\Render\Direct3D10\SCTTextManagerD3D10.h" />
+    <ClInclude Include="Include\Render\SCTInputLayout.h" />
+    <ClInclude Include="Include\Render\SCTRenderDefines.h" />
+    <ClInclude Include="Include\Render\SCTRenderTarget.h" />
+    <ClInclude Include="Include\Render\SCTRenderTexture.h" />
+    <ClInclude Include="Include\Render\SCTRenderWindow.h" />
+    <ClInclude Include="Include\Render\SCTTextManager.h" />
+    <ClInclude Include="Include\Render\SCTVertexDefs.h" />
+    <ClInclude Include="Include\Render\SCTRenderInterface.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTFontD3D10.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTMaterialD3D10.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTMeshD3D10.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10Debug.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10Font.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10Lighting.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10PostEffect.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10SkyBox.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTShaderD3D10Wireframe.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTSkyBoxD3D10.h" />
+    <ClInclude Include="Include\Resource\Direct3D10\SCTTextureD3D10.h" />
+    <ClInclude Include="Include\Resource\SCTFont.h" />
+    <ClInclude Include="Include\Resource\SCTMaterial.h" />
+    <ClInclude Include="Include\Resource\SCTMesh.h" />
+    <ClInclude Include="Include\Resource\SCTResourceManager.h" />
+    <ClInclude Include="Include\Resource\SCTShader.h" />
+    <ClInclude Include="Include\Resource\SCTSkyBox.h" />
+    <ClInclude Include="Include\Resource\SCTTexture.h" />
+    <ClInclude Include="Include\Scene\SCTCamera.h" />
+    <ClInclude Include="Include\Scene\SCTLight.h" />
+    <ClInclude Include="Include\Scene\SCTSceneManager.h" />
+    <ClInclude Include="Include\Scene\SCTSceneNode.h" />
+    <ClInclude Include="Include\SCTConfiguration.h" />
+    <ClInclude Include="Include\SCTEngine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Input\Win32\SCTInputManagerWin32.cpp" />
+    <ClCompile Include="Source\Input\Win32\SCTKeyboardWin32.cpp" />
+    <ClCompile Include="Source\Input\Win32\SCTMouseWin32.cpp" />
+    <ClCompile Include="Source\PCG\SCTPCGFunctions.cpp" />
+    <ClCompile Include="Source\PCG\Terrain\SCTTerrain.cpp" />
+    <ClCompile Include="Source\PCG\Vegetation\SCTVegetation.cpp" />
+    <ClCompile Include="Source\Render\Direct3D10\SCTInputLayoutD3D10.cpp" />
+    <ClCompile Include="Source\Render\Direct3D10\SCTRenderInterfaceD3D10.cpp" />
+    <ClCompile Include="Source\Render\Direct3D10\SCTRenderTextureD3D10.cpp" />
+    <ClCompile Include="Source\Render\Direct3D10\SCTRenderWindowD3D10.cpp" />
+    <ClCompile Include="Source\Render\Direct3D10\SCTTextManagerD3D10.cpp" />
+    <ClCompile Include="Source\Resource\Direct3D10\SCTFontD3D10.cpp" />
+    <ClCompile Include="Source\Resource\Direct3D10\SCTMeshD3D10.cpp" />
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10.cpp" />
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10Debug.cpp" />
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10Font.cpp" />
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10Lighting.cpp" />
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10PostEffect.cpp" />
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10SkyBox.cpp" />
+    <ClCompile Include="Source\Resource\Direct3D10\SCTShaderD3D10Wireframe.cpp" />
+    <ClCompile Include="Source\Resource\Direct3D10\SCTSkyBoxD3D10.cpp" />
+    <ClCompile Include="Source\Resource\Direct3D10\SCTTextureD3D10.cpp" />
+    <ClCompile Include="Source\Resource\SCTMaterial.cpp" />
+    <ClCompile Include="Source\Resource\SCTResourceManager.cpp" />
+    <ClCompile Include="Source\Scene\SCTCamera.cpp" />
+    <ClCompile Include="Source\Scene\SCTLight.cpp" />
+    <ClCompile Include="Source\Scene\SCTSceneManager.cpp" />
+    <ClCompile Include="Source\Scene\SCTSceneNode.cpp" />
+    <ClCompile Include="Source\SCTConfiguration.cpp" />
+    <ClCompile Include="Source\SCTEngine.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

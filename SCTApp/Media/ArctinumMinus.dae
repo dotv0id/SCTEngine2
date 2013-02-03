@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>v0id</author>
+      <authoring_tool>OpenCOLLADA2011</authoring_tool>
+      <comments>
+			ColladaMaya export options: 
+			bakeTransforms=1;relativePaths=1;copyTextures=0;exportTriangles=1;exportCgfxFileReferences=0;
+			isSampling=0;curveConstrainSampling=0;removeStaticCurves=1;exportPolygonMeshes=1;exportLights=0;
+			exportCameras=0;exportJointsAndSkin=0;exportAnimations=0;exportInvisibleNodes=0;exportDefaultCameras=0;
+			exportTexCoords=1;exportNormals=1;exportNormalsPerVertex=1;exportVertexColors=1;exportVertexColorsPerVertex=1;
+			exportTexTangents=1;exportTangents=0;exportReferencedMaterials=0;exportMaterialsOnly=0;
+			exportXRefs=1;dereferenceXRefs=1;exportCameraAsLookat=0;cameraXFov=0;cameraYFov=1;doublePrecision=0
+		</comments>
+      <source_data>file:///C:/Users/v0id/Documents/maya/projects/default/untitled</source_data>
+    </contributor>
+    <created>2012-05-04T11:39:42</created>
+    <modified>2012-05-04T11:39:42</modified>
+    <unit name="centimeter" meter="0.01"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="ArctinumMinusMaterial" name="ArctinumMinusMaterial">
+      <instance_effect url="#ArctinumMinusMaterial-fx"/>
+    </material>
+    <material id="Material_TF_66049_StreamPlant_png1" name="Material_TF_66049_StreamPlant_png1">
+      <instance_effect url="#Material_TF_66049_StreamPlant_png1-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="ArctinumMinusMaterial-fx">
+      <profile_COMMON>
+        <newparam sid="Material_TF_66049_BurdockLeaf_png1F-surface">
+          <surface type="2D">
+            <init_from>Material_TF_66049_BurdockLeaf_png1F</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Material_TF_66049_BurdockLeaf_png1F-sampler">
+          <sampler2D>
+            <source>Material_TF_66049_BurdockLeaf_png1F-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Material_TF_66049_BurdockLeaf_png1F-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode>NONE</blend_mode>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <fast>0</fast>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <rotateFrame>0</rotateFrame>
+                    <rotateUV>0</rotateUV>
+                    <stagger>0</stagger>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>2</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <texture texture="Material_TF_66049_BurdockLeaf_png1F-sampler" texcoord="TEX1">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode>NONE</blend_mode>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <fast>0</fast>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <rotateFrame>0</rotateFrame>
+                    <rotateUV>0</rotateUV>
+                    <stagger>0</stagger>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_TF_66049_StreamPlant_png1-fx">
+      <profile_COMMON>
+        <newparam sid="Material_TF_66049_StreamPlant_png1F-surface">
+          <surface type="2D">
+            <init_from>Material_TF_66049_StreamPlant_png1F</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Material_TF_66049_StreamPlant_png1F-sampler">
+          <sampler2D>
+            <source>Material_TF_66049_StreamPlant_png1F-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="Material_TF_66049_StreamPlant_png1F-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode>NONE</blend_mode>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <fast>0</fast>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <rotateFrame>0</rotateFrame>
+                    <rotateUV>0</rotateUV>
+                    <stagger>0</stagger>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float>98.07843</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>0.5</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="Material_TF_66049_BurdockLeaf_png1F" name="Material_TF_66049_BurdockLeaf_png1F">
+      <init_from>./Textures/BurdockLeaf.dds</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+          <originalMayaNodeId>Material_TF_66049_BurdockLeaf_png1F</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+    <image id="Material_TF_66049_StreamPlant_png1F" name="Material_TF_66049_StreamPlant_png1F">
+      <init_from>./Texture/StreamPlant.png</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+          <originalMayaNodeId>Material_TF_66049_StreamPlant_png1F</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_geometries>
+    <geometry id="MeshShape" name="MeshShape">
+      <mesh>
+        <source id="MeshShape-positions" name="MeshShape-positions">
+          <float_array id="MeshShape-positions-array" count="144">-1.03763 0.067651 -0.239707 -0.455619 0.278757 -0.887406 0.062794 0.627489 -0.286119 -0.519217 0.416383 0.36158 -0.214777 0.369853 2.34e-4 -0.264561 0.672659 -0.565552 -0.847538 0.472495 0.084845 -0.486605 0.359508 -0.24297 -0.312142 0.357079 -0.076492 -0.298122 0.362164 -0.092094 -0.157434 -0.021028 -0.099179 -0.17954 -0.029046 -0.074578 0.40686 0.002263 0.13735 0.384913 -0.002263 0.162962 0.433399 0.389917 0.265546 0.447318 0.392788 0.249303 0.571855 0.378675 0.353819 0.826168 0.611626 0.122609 0.348234 0.503497 0.681614 0.339489 0.38921 0.160098 0.559344 0.567418 -0.113843 0.079983 0.468555 0.445577 0.592064 0.162663 0.847675 1.071425 0.261527 0.288255 0.394582 0.309927 -1.112167 1.249554 0.371223 -0.415478 0.582559 0.725392 0.341112 -0.272413 0.664097 -0.355577 0.186168 0.50465 -0.028669 0.908315 0.83112 -0.067957 0.051106 0.783501 -0.763104 0.465401 0.533669 -0.380151 0.307845 0.505026 -0.195789 0.32844 0.506503 -0.179007 0.306671 0.010485 -0.096486 0.274198 0.008156 -0.122948 0.131435 0.002953 0.261374 0.095519 -0.002953 0.235938 -0.031937 0.508773 0.311267 -0.009159 0.512519 0.327399 -0.172202 0.509171 0.566772 0.226769 0.875569 0.931562 -0.71799 0.705498 0.264048 0.097524 0.525741 0.174774 0.558422 0.806037 0.479403 -0.387193 0.650538 -0.190284 -0.942734 0.169414 0.669994 0.002882 0.324913 1.339681</float_array>
+          <technique_common>
+            <accessor source="#MeshShape-positions-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MeshShape-normals" name="MeshShape-normals">
+          <float_array id="MeshShape-normals-array" count="324">-0.1150558 0.9714721 0.2073745 -0.3780967 0.9242296 -0.05331638 -0.1024226 0.9204311 -0.3772484 -0.1150558 0.9714721 0.2073745 -0.1024226 0.9204311 -0.3772484 0.1484768 0.9852854 -0.08466018 -0.3583891 0.8096179 0.4648401 -0.6586069 0.7234607 0.2069826 -0.3780967 0.9242296 -0.05331638 -0.3583891 0.8096179 0.4648401 -0.3780967 0.9242296 -0.05331638 -0.1150558 0.9714721 0.2073745 -0.4291272 0.8056397 -0.4084049 -0.1024226 0.9204311 -0.3772484 -0.3780967 0.9242296 -0.05331638 -0.697648 0.7059793 -0.1219864 -0.3780967 0.9242296 -0.05331638 -0.6586069 0.7234607 0.2069826 -0.4291272 0.8056397 -0.4084049 -0.3780967 0.9242296 -0.05331638 -0.697648 0.7059793 -0.1219864 0.2551404 0.7391435 0.6233541 0.1585458 0.9356165 0.3154126 0.5229428 0.7885798 0.3235318 0.5229428 0.7885798 0.3235318 0.1585458 0.9356165 0.3154126 0.4626168 0.8864731 0.01229945 0.2551404 0.7391435 0.6233541 -0.09036748 0.7777243 0.622076 0.1585458 0.9356165 0.3154126 0.1367568 0.9671589 -0.2142459 0.4626168 0.8864731 0.01229945 0.1585458 0.9356165 0.3154126 0.1367568 0.9671589 -0.2142459 0.1585458 0.9356165 0.3154126 -0.1224107 0.9895988 0.07556444 -0.1224107 0.9895988 0.07556444 0.1585458 0.9356165 0.3154126 -0.09036748 0.7777243 0.622076 -0.1224107 0.9895988 0.07556444 -0.09036748 0.7777243 0.622076 -0.3654355 0.8597522 0.3567674 -0.1307129 0.9881734 0.08017316 0.1105719 0.9726508 -0.2042654 0.4473721 0.8933092 0.04309211 -0.1307129 0.9881734 0.08017316 0.4473721 0.8933092 0.04309211 0.1752118 0.9306877 0.3211249 -0.4136005 0.8943432 -0.1705426 -0.1804284 0.8479421 -0.4984374 0.1105719 0.9726508 -0.2042654 -0.4136005 0.8943432 -0.1705426 0.1105719 0.9726508 -0.2042654 -0.1307129 0.9881734 0.08017316 0.4511592 0.8403348 -0.3004878 0.4473721 0.8933092 0.04309211 0.1105719 0.9726508 -0.2042654 0.1433475 0.8142782 -0.5624968 0.1105719 0.9726508 -0.2042654 -0.1804284 0.8479421 -0.4984374 0.4511592 0.8403348 -0.3004878 0.1105719 0.9726508 -0.2042654 0.1433475 0.8142782 -0.5624968 -0.5971991 0.7391442 0.3114788 -0.29948 0.9356121 0.1869272 -0.2739734 0.7885922 0.5505099 -0.2739734 0.7885922 0.5505099 -0.29948 0.9356121 0.1869272 0.03033599 0.8864698 0.461791 -0.5971991 0.7391442 0.3114788 -0.6277534 0.7777258 -0.03268596 -0.29948 0.9356121 0.1869272 0.2259354 0.9671593 0.1164313 0.03033599 0.8864698 0.461791 -0.29948 0.9356121 0.1869272 0.2259354 0.9671593 0.1164313 -0.29948 0.9356121 0.1869272 -0.08652046 0.9895982 -0.1149336 -0.08652046 0.9895982 -0.1149336 -0.29948 0.9356121 0.1869272 -0.6277534 0.7777258 -0.03268596 -0.08652046 0.9895982 -0.1149336 -0.6277534 0.7777258 -0.03268596 -0.3889063 0.8597576 -0.3310119 0.6826534 0.2378364 0.6909546 0.6826534 0.2378364 0.6909546 0.6826534 0.2378364 0.6909546 0.6826534 0.2378364 0.6909546 0.6826534 0.2378364 0.6909546 0.6826534 0.2378364 0.6909546 -0.7564735 0.2514458 -0.6037573 -0.7564735 0.2514458 -0.6037573 -0.7564735 0.2514458 -0.6037573 -0.7564735 0.2514458 -0.6037573 -0.7564735 0.2514458 -0.6037573 -0.7564735 0.2514458 -0.6037573 -0.6307657 0.1541821 0.7605015 -0.6307657 0.1541821 0.7605015 -0.6307657 0.1541821 0.7605015 -0.6307657 0.1541821 0.7605015 -0.6307657 0.1541821 0.7605015 -0.6307657 0.1541821 0.7605015 0.5314924 0.2514479 -0.8088819 0.5314924 0.2514479 -0.8088819 0.5314924 0.2514479 -0.8088819 0.5314924 0.2514479 -0.8088819 0.5314924 0.2514479 -0.8088819 0.5314924 0.2514479 -0.8088819</float_array>
+          <technique_common>
+            <accessor source="#MeshShape-normals-array" count="108" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MeshShape-map1" name="MeshShape-map1">
+          <float_array id="MeshShape-map1-array" count="172">0.005965 0.507453 0.441805 0.507453 0.441805 0.992899 0.005965 0.992899 0.005965 0.007766 0.441805 0.007766 0.998184 0.992899 0.998184 0.007766 0.441805 0.493212 0.005965 0.493212 0 0 1 0 1 0.057136 0 0.057136 0.998184 0.007766 0.998184 0.992899 0.998184 0.992899 0.441805 0.992899 0.998184 0.007766 0.441805 0.007766 0.005965 0.992899 0.441805 0.992899 0.005965 0.992899 0.441805 0.007766 0.441805 0.007766 0.005965 0.007766 0.005965 0.507453 0.441805 0.507453 0.441805 0.992899 0.005965 0.507453 0.441805 0.992899 0.005965 0.992899 0.005965 0.007766 0.441805 0.007766 0.441805 0.507453 0.005965 0.007766 0.441805 0.507453 0.005965 0.507453 0.998184 0.992899 0.441805 0.992899 0.441805 0.507453 0.998184 0.007766 0.441805 0.507453 0.441805 0.007766 0.998184 0.992899 0.441805 0.507453 0.998184 0.007766 0.998184 0.007766 0.441805 0.493212 0.998184 0.992899 0.998184 0.992899 0.441805 0.493212 0.441805 0.992899 0.998184 0.007766 0.441805 0.007766 0.441805 0.493212 0.005965 0.992899 0.441805 0.992899 0.441805 0.493212 0.005965 0.992899 0.441805 0.493212 0.005965 0.493212 0.005965 0.493212 0.441805 0.493212 0.441805 0.007766 0.005965 0.493212 0.441805 0.007766 0.005965 0.007766 0 0 1 0 1 0.057136 0 0 1 0.057136 0 0.057136 0 0 1 0 1 0.057136 0 0 1 0.057136 0 0.057136 0 0 1 0 1 0.057136 0 0 1 0.057136 0 0.057136</float_array>
+          <technique_common>
+            <accessor source="#MeshShape-map1-array" count="86" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MeshShape-textangents">
+          <float_array id="MeshShape-textangents-array" count="324">-0.7565941 0.04957246 -0.6520032 -0.663651 -0.3107486 -0.680443 -0.7489467 -0.3209442 -0.5797187 -0.7513449 0.0514531 -0.6579009 -0.7934729 -0.3043163 -0.5270602 -0.7702946 0.06154164 -0.6347117 -0.7376894 0.05956938 -0.6725072 -0.519623 -0.238299 -0.820491 -0.6587812 -0.3090722 -0.6859167 -0.7702032 0.02496816 -0.6373097 -0.663651 -0.3107486 -0.680443 -0.7565941 0.0495725 -0.6520032 -0.4401387 -0.5813511 -0.684331 -0.4256342 -0.3833235 -0.8196943 -0.6291085 -0.2987614 -0.71761 -0.4965692 -0.5992178 -0.6279787 -0.6290038 -0.2987248 -0.717717 -0.6873907 -0.466512 -0.5566512 -0.5077707 -0.589114 -0.6285807 -0.6362593 -0.3012607 -0.7102226 -0.4537188 -0.5671375 -0.6873823 0.6635514 -0.6027667 0.4431387 0.7269889 -0.3267797 0.6039057 0.6092593 -0.6112674 0.505129 0.6549374 -0.6146694 0.4395891 0.7197776 -0.3281941 0.6117262 0.8060019 -0.4263191 0.4106253 0.5991625 -0.626854 0.4980548 0.5472411 -0.483103 0.6834755 0.719882 -0.3281739 0.6116141 0.7407384 0.0437595 0.6703669 0.605377 -0.325998 0.7261157 0.7493059 -0.322045 0.578643 0.778305 0.02888992 0.6272214 0.7541202 -0.3209484 0.5729703 0.7602625 0.04455545 0.6480862 0.7602626 0.04455546 0.6480862 0.7541202 -0.3209484 0.5729702 0.8337232 -0.2825812 0.4743982 0.7550517 0.04344213 0.6542245 0.8702413 -0.2420658 0.4290504 0.7698628 0.06371657 0.635021 0.6122459 0.1440614 -0.7774324 0.6151896 -0.2284017 -0.7545692 0.5095249 -0.2149808 -0.8331672 0.6185551 0.1444831 -0.7723433 0.4561347 -0.1864585 -0.8701577 0.5953082 0.1596391 -0.7874792 0.6345048 0.148804 -0.7584597 0.7683834 -0.1948413 -0.6096097 0.6210348 -0.2280781 -0.7498641 0.594821 0.123618 -0.7942964 0.6151896 -0.2284017 -0.7545691 0.6122459 0.1440614 -0.7774325 0.6082848 -0.5359278 -0.5854664 0.7604221 -0.3545755 -0.5440905 0.6550534 -0.2258891 -0.7210265 0.5476793 -0.5386724 -0.6402183 0.6551681 -0.2258809 -0.7209249 0.477626 -0.3674638 -0.7980249 0.5485198 -0.5267005 -0.6493941 0.6470993 -0.2264494 -0.7279996 0.6117876 -0.5196695 -0.596372 -0.380116 -0.6027608 0.7015635 -0.5343513 -0.3267855 0.7795383 -0.4468451 -0.6112527 0.6532224 -0.3773811 -0.6146537 0.6926647 -0.5428104 -0.3282012 0.7730723 -0.3346311 -0.4263364 0.8403924 -0.4407353 -0.6268506 0.6425036 -0.6301585 -0.4830942 0.6078818 -0.5426905 -0.3281814 0.773165 -0.5992635 0.0437621 0.7993548 -0.6672401 -0.326033 0.6696963 -0.5071321 -0.3220488 0.7994384 -0.5528427 0.02889345 0.8327847 -0.5010453 -0.320953 0.8037057 -0.5752824 0.04456072 0.8167402 -0.5752823 0.04456074 0.8167403 -0.5010452 -0.320953 0.8037058 -0.3955739 -0.2825663 0.8738865 -0.5818695 0.04344828 0.8121209 -0.347051 -0.2420476 0.9060732 -0.5613882 0.06372605 0.8250954 -0.344586 0.9385941 0.01736873 -0.344586 0.9385941 0.01736873 -0.344586 0.9385941 0.01736873 -0.3247796 0.9457783 -0.004672683 -0.3247796 0.9457783 -0.004672687 -0.3247796 0.9457783 -0.004672687 0.1187574 0.9606052 0.2512656 0.1187574 0.9606052 0.2512656 0.1187574 0.9606052 0.2512656 0.09909381 0.9565496 0.2742138 0.09909381 0.9565496 0.2742138 0.09909381 0.9565496 0.2742138 0.04323776 0.9855223 -0.1639405 0.04323775 0.9855223 -0.1639405 0.04323775 0.9855223 -0.1639405 0.0668386 0.9872142 -0.1447088 0.0668386 0.9872142 -0.1447088 0.0668386 0.9872142 -0.1447088 -0.2392566 0.9606047 0.1414037 -0.2392566 0.9606047 0.1414037 -0.2392566 0.9606047 0.1414037 -0.2639188 0.9565492 0.1239382 -0.2639188 0.9565492 0.1239382 -0.2639188 0.9565492 0.1239382</float_array>
+          <technique_common>
+            <accessor source="#MeshShape-textangents-array" count="108" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MeshShape-texbinormals">
+          <float_array id="MeshShape-texbinormals-array" count="324">-0.6436829 -0.2319151 0.7293063 -0.6454536 -0.2218898 0.7308589 -0.6546668 0.2231627 0.7222257 -0.6498024 -0.2315051 0.7239906 -0.5999253 0.2453535 0.7615059 -0.6201621 0.1594533 0.7680974 -0.572164 -0.5839269 0.5758975 -0.5442692 -0.6479339 0.5328721 -0.6504232 -0.224219 0.7257242 -0.5275835 -0.5864262 0.6146219 -0.6454536 -0.2218898 0.7308589 -0.643683 -0.2319151 0.7293063 -0.7887508 -0.1139102 0.6040667 -0.8990802 0.07661463 0.4310279 -0.6791652 -0.2377841 0.6944014 -0.5164363 -0.3775333 0.7686106 -0.6792622 -0.2378302 0.6942908 -0.3061554 -0.5088922 0.8045481 -0.7470066 -0.06236505 0.661885 -0.6724709 -0.2346097 0.7019553 -0.5544606 -0.4242033 0.7159784 -0.7032802 -0.3005649 0.6442498 -0.6680946 -0.1335547 0.7319924 -0.596099 0.06703876 0.8001074 -0.5455162 0.01798686 0.8379073 -0.6758577 -0.1300403 0.7254696 -0.3692517 0.1800487 0.9117212 -0.7588859 -0.2464165 0.6028028 -0.8320823 -0.4021895 0.3819458 -0.6757464 -0.130091 0.7255641 -0.6577266 0.2503774 0.7104273 -0.6476917 0.3284675 0.6874626 -0.642965 -0.1445991 0.7521217 -0.6128123 0.2525255 0.7487937 -0.6373116 -0.147017 0.7564523 -0.6379785 -0.1367815 0.7578089 -0.6379784 -0.1367815 0.7578089 -0.6373115 -0.147017 0.7564523 -0.5447381 -0.5615094 0.6228706 -0.6441371 -0.1371391 0.7525159 -0.4842662 -0.5801285 0.654933 -0.5232287 -0.5067211 0.6851755 -0.7797879 -0.05253477 -0.6238357 -0.7805867 -0.04222779 -0.6236194 -0.7350119 0.3946923 -0.5513397 -0.7747926 -0.05136371 -0.6301255 -0.7692849 0.40894 -0.4908856 -0.7841613 0.3291439 -0.5260754 -0.6529459 -0.4219094 -0.6290105 -0.6140298 -0.4929819 -0.6163897 -0.7759444 -0.043942 -0.629269 -0.6892915 -0.4299637 -0.5831025 -0.7805868 -0.04222779 -0.6236194 -0.7797878 -0.05253477 -0.6238357 -0.6530276 0.08135641 -0.7529516 -0.4707617 0.2761791 -0.8379192 -0.7474483 -0.05407947 -0.6621152 -0.8243172 -0.2162941 -0.5231806 -0.7473478 -0.05411412 -0.6622258 -0.8598366 -0.3820531 -0.3386983 -0.7039755 0.1281566 -0.698566 -0.7543451 -0.05168369 -0.6544405 -0.7779251 -0.2586401 -0.5726585 -0.7063038 -0.300575 -0.6409287 -0.7904305 -0.1335713 -0.5978113 -0.8516268 0.06702706 -0.5198455 -0.8846028 0.01798034 -0.4659985 -0.7846456 -0.1300536 -0.6061497 -0.9418609 0.1800238 -0.283707 -0.6701535 -0.2464229 -0.7001215 -0.456975 -0.4021972 -0.7933545 -0.7847285 -0.1301038 -0.6060315 -0.7680081 0.2503756 -0.5894707 -0.7442247 0.3284414 -0.5815977 -0.8081638 -0.144619 -0.570926 -0.8020712 0.2525237 -0.541215 -0.8119516 -0.1470347 -0.564903 -0.8133661 -0.136784 -0.565443 -0.8133661 -0.136784 -0.5654429 -0.8119518 -0.1470348 -0.5649029 -0.6704081 -0.561515 -0.4850299 -0.8086669 -0.1371414 -0.5720578 -0.6967649 -0.5801342 -0.4218566 -0.730476 -0.5067109 -0.4578742 -0.644395 -0.2499501 0.7226895 -0.644395 -0.2499501 0.7226895 -0.644395 -0.2499501 0.7226895 -0.6546011 -0.2212181 0.7228831 -0.6546011 -0.2212181 0.7228831 -0.6546011 -0.2212181 0.7228831 0.6431521 0.1183751 -0.7565334 0.6431521 0.1183751 -0.7565334 0.6431521 0.1183751 -0.7565334 0.6464737 0.1476069 -0.7485212 0.6464737 0.1476069 -0.7485212 0.6464737 0.1476069 -0.7485212 -0.7747678 -0.07052568 -0.6283001 -0.7747678 -0.07052568 -0.6283001 -0.7747678 -0.07052568 -0.6283001 -0.7730895 -0.04044652 -0.6330062 -0.7730895 -0.04044652 -0.6330062 -0.7730895 -0.04044652 -0.6330062 0.8125713 0.1183753 0.5707147 0.8125713 0.1183753 0.5707147 0.8125713 0.1183753 0.5707147 0.8048992 0.1476069 0.5747604 0.8048992 0.1476069 0.5747604 0.8048992 0.1476069 0.5747604</float_array>
+          <technique_common>
+            <accessor source="#MeshShape-texbinormals-array" count="108" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="MeshShape-vertices" name="MeshShape-vertices">
+          <input semantic="POSITION" source="#MeshShape-positions"/>
+        </vertices>
+        <triangles material="Material_TF_66049_BurdockLeaf_png" count="28">
+          <input semantic="VERTEX" source="#MeshShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#MeshShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#MeshShape-map1" offset="2" set="0"/>
+          <input semantic="TEXTANGENT" source="#MeshShape-textangents" offset="3" set="0"/>
+          <input semantic="TEXBINORMAL" source="#MeshShape-texbinormals" offset="3" set="0"/>
+          <p>4 0 0 0 7 1 1 1 6 2 2 2 4 3 0 3 6 4 2 4 3 5 3 5 2 6 4 6 5 7 5 7 7 8 1 8 2 9 4 9 7 10 1 10 4 11 0 11 0 12 6 12 6 13 2 13 7 14 1 14 1 15 7 15 7 16 1 16 5 17 5 17 0 18 6 18 7 19 1 19 1 20 7 20 23 21 14 21 16 22 8 22 22 23 15 23 22 24 16 24 16 25 8 25 18 26 17 26 23 27 18 27 17 28 19 28 16 29 8 29 21 30 20 30 18 31 21 31 16 32 8 32 21 33 22 33 16 34 8 34 19 35 9 35 19 36 9 36 16 37 8 37 17 38 23 38 19 39 9 39 17 40 24 40 20 41 25 41 28 42 26 42 31 43 27 43 30 44 28 44 28 45 29 45 30 46 30 46 27 47 31 47 26 48 32 48 29 49 33 49 31 50 34 50 26 51 35 51 31 52 36 52 28 53 37 53 24 54 38 54 30 55 39 55 31 56 40 56 25 57 41 57 31 58 42 58 29 59 43 59 24 60 44 60 31 61 45 61 25 62 46 62 47 63 47 63 40 64 48 64 46 65 49 65 46 66 50 66 40 67 51 67 42 68 52 68 47 69 53 69 41 70 54 70 40 71 55 71 45 72 56 72 42 73 57 73 40 74 58 74 45 75 59 75 40 76 60 76 43 77 61 77 43 78 62 78 40 79 63 79 41 80 64 80 43 81 65 81 41 82 66 82 44 83 67 83</p>
+        </triangles>
+        <triangles material="Material_TF_66049_StreamPlant_png" count="8">
+          <input semantic="VERTEX" source="#MeshShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#MeshShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#MeshShape-map1" offset="2" set="0"/>
+          <input semantic="TEXTANGENT" source="#MeshShape-textangents" offset="3" set="0"/>
+          <input semantic="TEXBINORMAL" source="#MeshShape-texbinormals" offset="3" set="0"/>
+          <p>10 84 10 84 9 85 11 85 8 86 12 86 10 87 10 87 8 88 12 88 11 89 13 89 13 90 68 90 14 91 69 91 15 92 70 92 13 93 71 93 15 94 72 94 12 95 73 95 34 96 74 96 33 97 75 97 32 98 76 98 34 99 77 99 32 100 78 100 35 101 79 101 37 102 80 102 38 103 81 103 39 104 82 104 37 105 83 105 39 106 84 106 36 107 85 107</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>MeshShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="untitled">
+      <node id="Mesh" name="Mesh" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#MeshShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_TF_66049_BurdockLeaf_png" target="#ArctinumMinusMaterial">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="TEX1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+              <instance_material symbol="Material_TF_66049_StreamPlant_png" target="#Material_TF_66049_StreamPlant_png1">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>Mesh</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>v0id</author>
+      <authoring_tool>OpenCOLLADA2011</authoring_tool>
+      <comments>
+			ColladaMaya export options: 
+			bakeTransforms=1;relativePaths=1;copyTextures=0;exportTriangles=1;exportCgfxFileReferences=0;
+			isSampling=0;curveConstrainSampling=0;removeStaticCurves=1;exportPolygonMeshes=1;exportLights=0;
+			exportCameras=0;exportJointsAndSkin=0;exportAnimations=0;exportInvisibleNodes=0;exportDefaultCameras=0;
+			exportTexCoords=1;exportNormals=1;exportNormalsPerVertex=1;exportVertexColors=1;exportVertexColorsPerVertex=1;
+			exportTexTangents=1;exportTangents=0;exportReferencedMaterials=0;exportMaterialsOnly=0;
+			exportXRefs=1;dereferenceXRefs=1;exportCameraAsLookat=0;cameraXFov=0;cameraYFov=1;doublePrecision=0
+		</comments>
+      <source_data>file:///C:/Users/v0id/Desktop/Game%20Dev/+%20General%20Media/3D%20Models/+Collada%20Models/WoodContainer_1/woodContainer_1.mb</source_data>
+    </contributor>
+    <created>2012-05-04T13:14:01</created>
+    <modified>2012-05-04T13:14:01</modified>
+    <unit name="centimeter" meter="0.01"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="lambert3" name="lambert3">
+      <instance_effect url="#lambert3-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="lambert3-fx">
+      <profile_COMMON>
+        <newparam sid="file3-surface">
+          <surface type="2D">
+            <init_from>file3</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="file3-sampler">
+          <sampler2D>
+            <source>file3-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="file4-surface">
+          <surface type="2D">
+            <init_from>file4</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="file4-sampler">
+          <sampler2D>
+            <source>file4-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="file3-sampler" texcoord="TEX0">
+                <extra>
+                  <technique profile="OpenCOLLADAMaya">
+                    <blend_mode>NONE</blend_mode>
+                    <coverageU>1</coverageU>
+                    <coverageV>1</coverageV>
+                    <fast>0</fast>
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <noiseU>0</noiseU>
+                    <noiseV>0</noiseV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <rotateFrame>0</rotateFrame>
+                    <rotateUV>0</rotateUV>
+                    <stagger>0</stagger>
+                    <translateFrameU>0</translateFrameU>
+                    <translateFrameV>0</translateFrameV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </lambert>
+          <extra>
+            <technique profile="OpenCOLLADAMaya">
+              <bump>
+                <texture texture="file4-sampler" texcoord="TEX1">
+                  <extra>
+                    <technique profile="OpenCOLLADA3dsMax">
+                      <amount>1</amount>
+                      <bumpInterp>0</bumpInterp>
+                    </technique>
+                    <technique profile="OpenCOLLADAMaya">
+                      <blend_mode>NONE</blend_mode>
+                      <coverageU>1</coverageU>
+                      <coverageV>1</coverageV>
+                      <fast>0</fast>
+                      <mirrorU>0</mirrorU>
+                      <mirrorV>0</mirrorV>
+                      <noiseU>0</noiseU>
+                      <noiseV>0</noiseV>
+                      <offsetU>0</offsetU>
+                      <offsetV>0</offsetV>
+                      <repeatU>1</repeatU>
+                      <repeatV>1</repeatV>
+                      <rotateFrame>0</rotateFrame>
+                      <rotateUV>0</rotateUV>
+                      <stagger>0</stagger>
+                      <translateFrameU>0</translateFrameU>
+                      <translateFrameV>0</translateFrameV>
+                      <wrapU>1</wrapU>
+                      <wrapV>1</wrapV>
+                    </technique>
+                  </extra>
+                </texture>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="file3" name="file3">
+      <init_from>./Textures/wc1_diffuse.dds</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+          <originalMayaNodeId>file3</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+    <image id="file4" name="file4">
+      <init_from>./Textures/wc1_normal.dds</init_from>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+          <originalMayaNodeId>file4</originalMayaNodeId>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_geometries>
+    <geometry id="MeshShape" name="MeshShape">
+      <mesh>
+        <source id="MeshShape-positions" name="MeshShape-positions">
+          <float_array id="MeshShape-positions-array" count="168">-0.83 -0.83 0.96 0.83 -0.83 0.96 0.83 0.83 0.96 -0.83 0.83 0.96 -0.83 -0.83 -0.96 -0.83 0.83 -0.96 0.83 0.83 -0.96 0.83 -0.83 -0.96 -0.83 -0.96 0.83 -0.83 -0.96 -0.83 0.83 -0.96 -0.83 0.83 -0.96 0.83 0.96 -0.83 0.83 0.96 -0.83 -0.83 0.96 0.83 -0.83 0.96 0.83 0.83 0.83 0.96 0.83 0.83 0.96 -0.83 -0.83 0.96 -0.83 -0.83 0.96 0.83 -0.96 0.83 0.83 -0.96 0.83 -0.83 -0.96 -0.83 -0.83 -0.96 -0.83 0.83 -1 -1 1 1 -1 1 0.83 -0.83 1 -0.83 -0.83 1 1 1 1 0.83 0.83 1 -1 1 1 -0.83 0.83 1 -1 -1 -1 -1 1 -1 -0.83 0.83 -1 -0.83 -0.83 -1 1 1 -1 0.83 0.83 -1 1 -1 -1 0.83 -0.83 -1 -0.83 -1 -0.83 -0.83 -1 0.83 0.83 -1 -0.83 0.83 -1 0.83 1 -0.83 -0.83 1 -0.83 0.83 1 0.83 -0.83 1 0.83 0.83 0.83 1 -0.83 0.83 1 0.83 -0.83 1 -0.83 -0.83 1 0.83 -1 0.83 -0.83 -1 0.83 0.83 -1 -0.83 -0.83 -1 -0.83 0.83</float_array>
+          <technique_common>
+            <accessor source="#MeshShape-positions-array" count="56" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MeshShape-normals" name="MeshShape-normals">
+          <float_array id="MeshShape-normals-array" count="648">0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 1 0 0 1 0 0 1 0 0 1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#MeshShape-normals-array" count="216" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MeshShape-map1" name="MeshShape-map1">
+          <float_array id="MeshShape-map1-array" count="368">0.013 0.5058 0.4975 0.5058 0.4563 0.547 0.0542 0.547 0.4975 0.9903 0.4563 0.9491 0.013 0.9903 0.0542 0.9491 0.9928 0.4976 0.9928 0.0131 0.9516 0.0542 0.9516 0.4564 0.5083 0.0131 0.5494 0.0542 0.5083 0.4976 0.5494 0.4564 0.5083 0.5058 0.9928 0.5058 0.9516 0.547 0.5495 0.547 0.9928 0.9903 0.9516 0.9491 0.5083 0.9903 0.5495 0.9491 0.0129 0.4976 0.0129 0.0131 0.0541 0.0542 0.0541 0.4564 0.4974 0.0131 0.4563 0.0542 0.4974 0.4976 0.4563 0.4564 0.4899 0.5285 0.0144 0.5285 0.0144 0.5103 0.4899 0.5103 0.4899 0.5286 0.0144 0.5286 0.0144 0.5104 0.4899 0.5104 0.0562 0.549 0.4543 0.549 0.4543 0.9471 0.0562 0.9471 0.9476 0.4524 0.9476 0.0582 0.5534 0.0582 0.5534 0.4524 0.5534 0.5509 0.9477 0.5509 0.9477 0.9452 0.5534 0.9452 0.0581 0.4524 0.0581 0.0582 0.4523 0.0582 0.4523 0.4524 0.4975 0.5058 0.4975 0.9903 0.4563 0.9491 0.4563 0.547 0.4975 0.9903 0.013 0.9903 0.0542 0.9491 0.4563 0.9491 0.013 0.9903 0.013 0.5058 0.0542 0.547 0.0542 0.9491 0.013 0.5058 0.4975 0.5058 0.4563 0.547 0.0542 0.547 0.5083 0.9903 0.9928 0.9903 0.9516 0.9491 0.5495 0.9491 0.9928 0.9903 0.9928 0.5058 0.9516 0.547 0.9516 0.9491 0.9928 0.5058 0.5083 0.5058 0.5495 0.547 0.9516 0.547 0.5083 0.5058 0.5083 0.9903 0.5495 0.9491 0.5495 0.547 0.0144 0.5103 0.4899 0.5103 0.4899 0.5285 0.0144 0.5285 0.0144 0.5103 0.4899 0.5103 0.4899 0.5285 0.0144 0.5285 0.4899 0.5285 0.0144 0.5285 0.0144 0.5103 0.4899 0.5103 0.4899 0.5285 0.0144 0.5285 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.0144 0.5104 0.4899 0.5104 0.4899 0.5285 0.0144 0.5285 0.0144 0.5103 0.4899 0.5103 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.4899 0.5285 0.0144 0.5285 0.0144 0.5103 0.4899 0.5103 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.4899 0.5285 0.0144 0.5285 0.0144 0.5103 0.4899 0.5103 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.4899 0.5286 0.0144 0.5286 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.0144 0.5104 0.4899 0.5104 0.0144 0.5104 0.4899 0.5104 0.4899 0.5286 0.0144 0.5286 0.4899 0.5285 0.0144 0.5285 0.0144 0.5104 0.4899 0.5104 0.4543 0.549 0.4543 0.9471 0.0562 0.9471 0.0562 0.549 0.5534 0.9452 0.9477 0.9452 0.9477 0.5509 0.5534 0.5509</float_array>
+          <technique_common>
+            <accessor source="#MeshShape-map1-array" count="184" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MeshShape-textangents">
+          <float_array id="MeshShape-textangents-array" count="648">1 0 0 1 0 0 1 0 0 1 0 0 1 4.24429e-4 0 1 0 0 0.9999999 -5.11841e-4 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 4.24429e-4 0 1 0 0 0.9999999 -5.11841e-4 0 1 0 0 -1 4.24429e-4 0 -1 0 0 -0.9999999 -5.11841e-4 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 4.24429e-4 0 -1 0 0 -0.9999999 -5.11841e-4 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -4.24429e-4 -0.9999992 0 -0.001294483 -0.9999977 0 -0.002164536 -0.9999992 0 -0.001294483 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -0.999998 0 0.002003281 -0.9999993 0 0.001133274 -1 0 2.63267e-4 -0.9999993 0 0.001133274 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 4.24429e-4 -1 0 0 -1 0 -5.11841e-4 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 4.24429e-4 -1 0 0 -1 0 -5.11841e-4 -0.9999999 0 0 -1 -1 0 4.24429e-4 -0.9999992 0 0.001294483 -0.9999977 0 0.002164536 -0.9999992 0 0.001294483 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -0.999998 0 -0.002003281 -0.9999994 0 -0.001133274 -1 0 -2.63267e-4 -0.9999994 0 -0.001133274 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -4.24429e-4 -1 0 0 -1 0 5.11841e-4 -0.9999999 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -4.24429e-4 -1 0 0 -1 0 5.11841e-4 -0.9999999 0 0 -1 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#MeshShape-textangents-array" count="216" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="MeshShape-texbinormals">
+          <float_array id="MeshShape-texbinormals-array" count="648">0 1 0 0 1 0 0 1 0 0 1 0 -4.24429e-4 0.9999999 0 0 1 0 5.11841e-4 0.9999999 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 -4.24429e-4 0.9999999 0 0 1 0 5.11841e-4 0.9999999 0 0 1 0 4.24429e-4 0.9999999 0 0 1 0 -5.11841e-4 0.9999999 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 4.24429e-4 0.9999999 0 0 1 0 -5.11841e-4 0.9999999 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 -4.24429e-4 0 0.9999999 -0.001294483 0 0.9999992 -0.002164536 0 0.9999977 -0.001294483 0 0.9999992 0 0 1 0 0 1 0 0 1 0 0 1 0.002003281 0 0.999998 0.001133274 0 0.9999993 2.63267e-4 0 1 0.001133274 0 0.9999993 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0.9999999 4.24429e-4 0 1 0 0 0.9999999 -5.11841e-4 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0.9999999 4.24429e-4 0 1 0 0 0.9999999 -5.11841e-4 0 1 0 4.24429e-4 0 0.9999999 0.001294483 0 0.9999992 0.002164536 0 0.9999977 0.001294483 0 0.9999992 0 0 1 0 0 1 0 0 1 0 0 1 -0.002003281 0 0.999998 -0.001133274 0 0.9999994 -2.63267e-4 0 1 -0.001133274 0 0.9999994 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0.9999999 -4.24429e-4 0 1 0 0 0.9999999 5.11841e-4 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0.9999999 -4.24429e-4 0 1 0 0 0.9999999 5.11841e-4 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#MeshShape-texbinormals-array" count="216" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="MeshShape-vertices" name="MeshShape-vertices">
+          <input semantic="POSITION" source="#MeshShape-positions"/>
+        </vertices>
+        <triangles material="lambert3SG" count="108">
+          <input semantic="VERTEX" source="#MeshShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#MeshShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#MeshShape-map1" offset="2" set="0"/>
+          <input semantic="TEXTANGENT" source="#MeshShape-textangents" offset="3" set="0"/>
+          <input semantic="TEXBINORMAL" source="#MeshShape-texbinormals" offset="3" set="0"/>
+          <p>24 0 0 0 25 1 1 1 27 3 3 3 27 3 3 3 25 1 1 1 26 2 2 2 25 4 1 4 28 5 4 5 26 7 2 7 26 7 2 7 28 5 4 5 29 6 5 6 28 8 4 8 30 9 6 9 29 11 5 11 29 11 5 11 30 9 6 9 31 10 7 10 30 12 6 12 24 13 0 13 31 15 7 15 31 15 7 15 24 13 0 13 27 14 3 14 32 16 56 16 33 17 57 17 35 19 59 19 35 19 59 19 33 17 57 17 34 18 58 18 33 20 60 20 36 21 61 21 34 23 63 23 34 23 63 23 36 21 61 21 37 22 62 22 36 24 64 24 38 25 65 25 37 27 67 27 37 27 67 27 38 25 65 25 39 26 66 26 38 28 68 28 32 29 69 29 39 31 71 31 39 31 71 31 32 29 69 29 35 30 70 30 24 32 8 32 32 33 9 33 41 35 11 35 41 35 11 35 32 33 9 33 40 34 10 34 32 36 9 36 38 37 12 37 40 39 10 39 40 39 10 39 38 37 12 37 42 38 13 38 38 40 12 40 25 41 14 41 42 43 13 43 42 43 13 43 25 41 14 41 43 42 15 42 25 44 14 44 24 45 8 45 43 47 15 47 43 47 15 47 24 45 8 45 41 46 11 46 25 48 16 48 38 49 17 49 45 51 19 51 45 51 19 51 38 49 17 49 44 50 18 50 38 52 17 52 36 53 20 53 44 55 18 55 44 55 18 55 36 53 20 53 46 54 21 54 36 56 20 56 28 57 22 57 46 59 21 59 46 59 21 59 28 57 22 57 47 58 23 58 28 60 22 60 25 61 16 61 47 63 23 63 47 63 23 63 25 61 16 61 45 62 19 62 28 64 24 64 36 65 25 65 49 67 27 67 49 67 27 67 36 65 25 65 48 66 26 66 36 68 25 68 33 69 28 69 48 71 26 71 48 71 26 71 33 69 28 69 50 70 29 70 33 72 28 72 30 73 30 73 50 75 29 75 50 75 29 75 30 73 30 73 51 74 31 74 30 76 30 76 28 77 24 77 51 79 31 79 51 79 31 79 28 77 24 77 49 78 27 78 30 80 72 80 33 81 73 81 53 83 75 83 53 83 75 83 33 81 73 81 52 82 74 82 33 84 76 84 32 85 77 85 52 87 79 87 52 87 79 87 32 85 77 85 54 86 78 86 32 88 80 88 24 89 81 89 54 91 83 91 54 91 83 91 24 89 81 89 55 90 82 90 24 92 84 92 30 93 85 93 55 95 87 95 55 95 87 95 30 93 85 93 53 94 86 94 1 96 32 96 0 97 33 97 26 99 35 99 26 99 35 99 0 97 33 97 27 98 34 98 26 100 88 100 29 101 89 101 1 103 91 103 1 103 91 103 29 101 89 101 2 102 90 102 29 104 92 104 31 105 93 105 2 107 95 107 2 107 95 107 31 105 93 105 3 106 94 106 0 108 96 108 3 109 97 109 27 111 99 111 27 111 99 111 3 109 97 109 31 110 98 110 35 112 36 112 34 113 37 113 4 115 39 115 4 115 39 115 34 113 37 113 5 114 38 114 34 116 100 116 37 117 101 117 5 119 103 119 5 119 103 119 37 117 101 117 6 118 102 118 37 120 104 120 39 121 105 121 6 123 107 123 6 123 107 123 39 121 105 121 7 122 106 122 39 124 108 124 35 125 109 125 7 127 111 127 7 127 111 127 35 125 109 125 4 126 110 126 41 128 112 128 40 129 113 129 8 131 115 131 8 131 115 131 40 129 113 129 9 130 114 130 40 132 116 132 42 133 117 133 9 135 119 135 9 135 119 135 42 133 117 133 10 134 118 134 42 136 120 136 43 137 121 137 10 139 123 139 10 139 123 139 43 137 121 137 11 138 122 138 43 140 124 140 41 141 125 141 11 143 127 143 11 143 127 143 41 141 125 141 8 142 126 142 45 144 128 144 44 145 129 145 12 147 131 147 12 147 131 147 44 145 129 145 13 146 130 146 44 148 132 148 46 149 133 149 13 151 135 151 13 151 135 151 46 149 133 149 14 150 134 150 46 152 136 152 47 153 137 153 14 155 139 155 14 155 139 155 47 153 137 153 15 154 138 154 47 156 140 156 45 157 141 157 15 159 143 159 15 159 143 159 45 157 141 157 12 158 142 158 49 160 144 160 48 161 145 161 16 163 147 163 16 163 147 163 48 161 145 161 17 162 146 162 48 164 148 164 50 165 149 165 17 167 151 167 17 167 151 167 50 165 149 165 18 166 150 166 50 168 152 168 51 169 153 169 18 171 155 171 18 171 155 171 51 169 153 169 19 170 154 170 51 172 156 172 49 173 157 173 19 175 159 175 19 175 159 175 49 173 157 173 16 174 158 174 53 176 160 176 52 177 161 177 20 179 163 179 20 179 163 179 52 177 161 177 21 178 162 178 52 180 164 180 54 181 165 181 21 183 167 183 21 183 167 183 54 181 165 181 22 182 166 182 54 184 168 184 55 185 169 185 22 187 171 187 22 187 171 187 55 185 169 185 23 186 170 186 55 188 172 188 53 189 173 189 23 191 175 191 23 191 175 191 53 189 173 189 20 190 174 190 0 192 40 192 1 193 41 193 3 195 43 195 3 195 43 195 1 193 41 193 2 194 42 194 4 196 176 196 5 197 177 197 7 199 179 199 7 199 179 199 5 197 177 197 6 198 178 198 8 200 44 200 9 201 45 201 11 203 47 203 11 203 47 203 9 201 45 201 10 202 46 202 12 204 48 204 13 205 49 205 15 207 51 207 15 207 51 207 13 205 49 205 14 206 50 206 16 208 52 208 17 209 53 209 19 211 55 211 19 211 55 211 17 209 53 209 18 210 54 210 20 212 180 212 21 213 181 213 23 215 183 215 23 215 183 215 21 213 181 213 22 214 182 214</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="OpenCOLLADAMaya">
+          <originalMayaNodeId>MeshShape</originalMayaNodeId>
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="woodContainer_1">
+      <node id="Mesh" name="Mesh" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#MeshShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="lambert3SG" target="#lambert3">
+                <bind_vertex_input semantic="TEX0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="TEX1" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="OpenCOLLADAMaya">
+            <originalMayaNodeId>Mesh</originalMayaNodeId>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>
